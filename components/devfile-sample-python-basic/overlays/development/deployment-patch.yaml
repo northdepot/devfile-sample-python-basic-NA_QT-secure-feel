@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/devfile-sample-python-basic@sha256:94017cc75f0eca8e3c4cd8ab7083dd91b8678a6e0f20d14a4b9e6093602a6c33
+        name: my-python
+        resources: {}
+status: {}
